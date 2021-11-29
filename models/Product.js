@@ -4,7 +4,6 @@ const Schema = mongoose.Schema;
 const productschema = new Schema({
     name:{
         type:String,
-        minLength:5,
         maxLength:25,
         required:true,
     },
@@ -18,8 +17,6 @@ const productschema = new Schema({
     }, 
     description:{
         type:String,
-        minLength:5,
-        maxLength:25,
         required:true,
     },
     brands:{
